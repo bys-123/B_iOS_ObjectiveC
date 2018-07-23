@@ -1,0 +1,134 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/bys/Documents/chmin/ios-swift-OC/a_ios_objectivec_2048-bucket/DerivedData/Build/Products/Debug-iphoneos/AppCenterXCUITestExtensions/AppCenterXCUITestExtensions.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "ACTLabel.h",
+          'external-contents': "/Users/bys/Documents/chmin/ios-swift-OC/a_ios_objectivec_2048-bucket/Pods/AppCenterXCUITestExtensions/Sources/ACTLabel.h"
+        },
+        {
+          'type': 'file',
+          'name': "ACTLaunch.h",
+          'external-contents': "/Users/bys/Documents/chmin/ios-swift-OC/a_ios_objectivec_2048-bucket/Pods/AppCenterXCUITestExtensions/Sources/ACTLaunch.h"
+        },
+        {
+          'type': 'file',
+          'name': "AppCenterXCUITestExtensions-Bridging-Header.h",
+          'external-contents': "/Users/bys/Documents/chmin/ios-swift-OC/a_ios_objectivec_2048-bucket/Pods/AppCenterXCUITestExtensions/Sources/AppCenterXCUITestExtensions-Bridging-Header.h"
+        },
+        {
+          'type': 'file',
+          'name': "AppCenterXCUITestExtensions-Swift.h",
+          'external-contents': "/Users/bys/Documents/chmin/ios-swift-OC/a_ios_objectivec_2048-bucket/DerivedData/Build/Products/Debug-iphoneos/AppCenterXCUITestExtensions/AppCenterXCUITestExtensions.framework/Headers/AppCenterXCUITestExtensions-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "AppCenterXCUITestExtensions-umbrella.h",
+          'external-contents': "/Users/bys/Documents/chmin/ios-swift-OC/a_ios_objectivec_2048-bucket/Pods/Target Support Files/AppCenterXCUITestExtensions/AppCenterXCUITestExtensions-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "AppCenterXCUITestExtensions.h",
+          'external-contents': "/Users/bys/Documents/chmin/ios-swift-OC/a_ios_objectivec_2048-bucket/Pods/AppCenterXCUITestExtensions/Sources/AppCenterXCUITestExtensions.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/bys/Documents/chmin/ios-swift-OC/a_ios_objectivec_2048-bucket/DerivedData/Build/Products/Debug-iphoneos/AppCenterXCUITestExtensions/AppCenterXCUITestExtensions.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/bys/Documents/chmin/ios-swift-OC/a_ios_objectivec_2048-bucket/DerivedData/Build/Intermediates/Pods.build/Debug-iphoneos/AppCenterXCUITestExtensions.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/bys/Documents/chmin/ios-swift-OC/a_ios_objectivec_2048-bucket/DerivedData/Build/Products/Debug-iphoneos/Pods_m2048.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-m2048-umbrella.h",
+          'external-contents': "/Users/bys/Documents/chmin/ios-swift-OC/a_ios_objectivec_2048-bucket/Pods/Target Support Files/Pods-m2048/Pods-m2048-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_m2048-Swift.h",
+          'external-contents': "/Users/bys/Documents/chmin/ios-swift-OC/a_ios_objectivec_2048-bucket/DerivedData/Build/Products/Debug-iphoneos/Pods_m2048.framework/Headers/Pods_m2048-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/bys/Documents/chmin/ios-swift-OC/a_ios_objectivec_2048-bucket/DerivedData/Build/Products/Debug-iphoneos/Pods_m2048.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/bys/Documents/chmin/ios-swift-OC/a_ios_objectivec_2048-bucket/DerivedData/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-m2048.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/bys/Documents/chmin/ios-swift-OC/a_ios_objectivec_2048-bucket/DerivedData/Build/Products/Debug-iphoneos/Pods_m2048Tests.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-m2048Tests-umbrella.h",
+          'external-contents': "/Users/bys/Documents/chmin/ios-swift-OC/a_ios_objectivec_2048-bucket/Pods/Target Support Files/Pods-m2048Tests/Pods-m2048Tests-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_m2048Tests-Swift.h",
+          'external-contents': "/Users/bys/Documents/chmin/ios-swift-OC/a_ios_objectivec_2048-bucket/DerivedData/Build/Products/Debug-iphoneos/Pods_m2048Tests.framework/Headers/Pods_m2048Tests-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/bys/Documents/chmin/ios-swift-OC/a_ios_objectivec_2048-bucket/DerivedData/Build/Products/Debug-iphoneos/Pods_m2048Tests.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/bys/Documents/chmin/ios-swift-OC/a_ios_objectivec_2048-bucket/DerivedData/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-m2048Tests.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/bys/Documents/chmin/ios-swift-OC/a_ios_objectivec_2048-bucket/DerivedData/Build/Products/Debug-iphoneos/Pods_m2048UITests.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-m2048UITests-umbrella.h",
+          'external-contents': "/Users/bys/Documents/chmin/ios-swift-OC/a_ios_objectivec_2048-bucket/Pods/Target Support Files/Pods-m2048UITests/Pods-m2048UITests-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_m2048UITests-Swift.h",
+          'external-contents': "/Users/bys/Documents/chmin/ios-swift-OC/a_ios_objectivec_2048-bucket/DerivedData/Build/Products/Debug-iphoneos/Pods_m2048UITests.framework/Headers/Pods_m2048UITests-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/bys/Documents/chmin/ios-swift-OC/a_ios_objectivec_2048-bucket/DerivedData/Build/Products/Debug-iphoneos/Pods_m2048UITests.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/bys/Documents/chmin/ios-swift-OC/a_ios_objectivec_2048-bucket/DerivedData/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-m2048UITests.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

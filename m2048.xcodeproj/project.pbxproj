@@ -1,0 +1,1001 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00BAF1355B7CC18FB7F9F011 /* Pods_m2048UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA131825A21D7CF209B9E557 /* Pods_m2048UITests.framework */; };
+		2443DC5618D662CA00C920C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2443DC5518D662CA00C920C1 /* Foundation.framework */; };
+		2443DC5818D662CA00C920C1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2443DC5718D662CA00C920C1 /* CoreGraphics.framework */; };
+		2443DC5A18D662CA00C920C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2443DC5918D662CA00C920C1 /* UIKit.framework */; };
+		2443DC5C18D662CA00C920C1 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2443DC5B18D662CA00C920C1 /* SpriteKit.framework */; };
+		2443DC6218D662CA00C920C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2443DC6018D662CA00C920C1 /* InfoPlist.strings */; };
+		2443DC6418D662CA00C920C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2443DC6318D662CA00C920C1 /* main.m */; };
+		2443DC6818D662CA00C920C1 /* M2AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2443DC6718D662CA00C920C1 /* M2AppDelegate.m */; };
+		2443DC6B18D662CA00C920C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2443DC6918D662CA00C920C1 /* Main.storyboard */; };
+		2443DC7518D662CA00C920C1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2443DC7418D662CA00C920C1 /* Images.xcassets */; };
+		2443DC7C18D662CA00C920C1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2443DC7B18D662CA00C920C1 /* XCTest.framework */; };
+		2443DC7D18D662CA00C920C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2443DC5518D662CA00C920C1 /* Foundation.framework */; };
+		2443DC7E18D662CA00C920C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2443DC5918D662CA00C920C1 /* UIKit.framework */; };
+		2443DC8618D662CA00C920C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2443DC8418D662CA00C920C1 /* InfoPlist.strings */; };
+		2443DC8818D662CA00C920C1 /* m2048Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2443DC8718D662CA00C920C1 /* m2048Tests.m */; };
+		2443DC9A18D663FC00C920C1 /* M2Scene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2443DC9618D663FC00C920C1 /* M2Scene.m */; };
+		2443DC9B18D663FC00C920C1 /* M2GameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2443DC9918D663FC00C920C1 /* M2GameManager.m */; };
+		2443DCA018D6647000C920C1 /* M2SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2443DC9F18D6647000C920C1 /* M2SettingsViewController.m */; };
+		2443DCA318D6649500C920C1 /* M2Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 2443DCA218D6649500C920C1 /* M2Theme.m */; };
+		2443DCA618D66CCC00C920C1 /* M2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2443DCA518D66CCC00C920C1 /* M2ViewController.m */; };
+		2443DCAF18D6C18400C920C1 /* M2Tile.m in Sources */ = {isa = PBXBuildFile; fileRef = 2443DCAE18D6C18400C920C1 /* M2Tile.m */; };
+		24C4515B18D6DC4A0001FCFD /* M2Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C4515A18D6DC4A0001FCFD /* M2Cell.m */; };
+		24C4515E18D6DC740001FCFD /* M2Grid.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C4515D18D6DC740001FCFD /* M2Grid.m */; };
+		24C4516418DABABE0001FCFD /* M2GlobalState.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C4516218DABABE0001FCFD /* M2GlobalState.m */; };
+		24C4516818DD64A90001FCFD /* M2GridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C4516718DD64A90001FCFD /* M2GridView.m */; };
+		24C4517018DFF10B0001FCFD /* M2ScoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C4516F18DFF10B0001FCFD /* M2ScoreView.m */; };
+		24C4517318E140AE0001FCFD /* M2SettingsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C4517218E140AE0001FCFD /* M2SettingsDetailViewController.m */; };
+		24C4518118E265390001FCFD /* M2Overlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C4518018E265390001FCFD /* M2Overlay.m */; };
+		4A02D0231FD52399003876C9 /* AppCenterXCUITestExtensions.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A5EF0121FD4F5B900EE8DB1 /* AppCenterXCUITestExtensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4A7147AD1F5CF5A400D80CC6 /* m2048UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7147AC1F5CF5A400D80CC6 /* m2048UITests.m */; };
+		4A7147B51F5CF6B500D80CC6 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 4A7147B41F5CF6B500D80CC6 /* Cartfile */; };
+		BFDE0CB5FC6605134C34496B /* Pods_m2048Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB4D89711BF76B3C7483A3F2 /* Pods_m2048Tests.framework */; };
+		EAEE6F88439B4FD932F58F0E /* Pods_m2048.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2887B6BAE78AE68856BAF1DC /* Pods_m2048.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2443DC7F18D662CA00C920C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2443DC4A18D662CA00C920C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2443DC5118D662CA00C920C1;
+			remoteInfo = m2048;
+		};
+		4A7147AF1F5CF5A400D80CC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2443DC4A18D662CA00C920C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2443DC5118D662CA00C920C1;
+			remoteInfo = m2048;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4A02D0221FD5238E003876C9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4A02D0231FD52399003876C9 /* AppCenterXCUITestExtensions.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A7147B81F5CF79800D80CC6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2443DC5218D662CA00C920C1 /* m2048.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = m2048.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2443DC5518D662CA00C920C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2443DC5718D662CA00C920C1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2443DC5918D662CA00C920C1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2443DC5B18D662CA00C920C1 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		2443DC5F18D662CA00C920C1 /* m2048-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "m2048-Info.plist"; sourceTree = "<group>"; };
+		2443DC6118D662CA00C920C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2443DC6318D662CA00C920C1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2443DC6518D662CA00C920C1 /* m2048-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "m2048-Prefix.pch"; sourceTree = "<group>"; };
+		2443DC6618D662CA00C920C1 /* M2AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = M2AppDelegate.h; sourceTree = "<group>"; };
+		2443DC6718D662CA00C920C1 /* M2AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = M2AppDelegate.m; sourceTree = "<group>"; };
+		2443DC6A18D662CA00C920C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2443DC7418D662CA00C920C1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2443DC7A18D662CA00C920C1 /* m2048Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = m2048Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2443DC7B18D662CA00C920C1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		2443DC8318D662CA00C920C1 /* m2048Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "m2048Tests-Info.plist"; sourceTree = "<group>"; };
+		2443DC8518D662CA00C920C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2443DC8718D662CA00C920C1 /* m2048Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = m2048Tests.m; sourceTree = "<group>"; };
+		2443DC9518D663FC00C920C1 /* M2Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2Scene.h; sourceTree = "<group>"; };
+		2443DC9618D663FC00C920C1 /* M2Scene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2Scene.m; sourceTree = "<group>"; };
+		2443DC9818D663FC00C920C1 /* M2GameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2GameManager.h; sourceTree = "<group>"; };
+		2443DC9918D663FC00C920C1 /* M2GameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2GameManager.m; sourceTree = "<group>"; };
+		2443DC9E18D6647000C920C1 /* M2SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2SettingsViewController.h; sourceTree = "<group>"; };
+		2443DC9F18D6647000C920C1 /* M2SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2SettingsViewController.m; sourceTree = "<group>"; };
+		2443DCA118D6649500C920C1 /* M2Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2Theme.h; sourceTree = "<group>"; };
+		2443DCA218D6649500C920C1 /* M2Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2Theme.m; sourceTree = "<group>"; };
+		2443DCA418D66CCC00C920C1 /* M2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2ViewController.h; sourceTree = "<group>"; };
+		2443DCA518D66CCC00C920C1 /* M2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2ViewController.m; sourceTree = "<group>"; };
+		2443DCAD18D6C18400C920C1 /* M2Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2Tile.h; sourceTree = "<group>"; };
+		2443DCAE18D6C18400C920C1 /* M2Tile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2Tile.m; sourceTree = "<group>"; };
+		24C4515918D6DC4A0001FCFD /* M2Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2Cell.h; sourceTree = "<group>"; };
+		24C4515A18D6DC4A0001FCFD /* M2Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2Cell.m; sourceTree = "<group>"; };
+		24C4515C18D6DC740001FCFD /* M2Grid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2Grid.h; sourceTree = "<group>"; };
+		24C4515D18D6DC740001FCFD /* M2Grid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2Grid.m; sourceTree = "<group>"; };
+		24C4516118DABABE0001FCFD /* M2GlobalState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2GlobalState.h; sourceTree = "<group>"; };
+		24C4516218DABABE0001FCFD /* M2GlobalState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2GlobalState.m; sourceTree = "<group>"; };
+		24C4516318DABABE0001FCFD /* M2Position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2Position.h; sourceTree = "<group>"; };
+		24C4516618DD64A90001FCFD /* M2GridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2GridView.h; sourceTree = "<group>"; };
+		24C4516718DD64A90001FCFD /* M2GridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2GridView.m; sourceTree = "<group>"; };
+		24C4516E18DFF10B0001FCFD /* M2ScoreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2ScoreView.h; sourceTree = "<group>"; };
+		24C4516F18DFF10B0001FCFD /* M2ScoreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2ScoreView.m; sourceTree = "<group>"; };
+		24C4517118E140AE0001FCFD /* M2SettingsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2SettingsDetailViewController.h; sourceTree = "<group>"; };
+		24C4517218E140AE0001FCFD /* M2SettingsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2SettingsDetailViewController.m; sourceTree = "<group>"; };
+		24C4517F18E265390001FCFD /* M2Overlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2Overlay.h; sourceTree = "<group>"; };
+		24C4518018E265390001FCFD /* M2Overlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2Overlay.m; sourceTree = "<group>"; };
+		2887B6BAE78AE68856BAF1DC /* Pods_m2048.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_m2048.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A5EF00F1FD4F59600EE8DB1 /* AppCenterXCUITestExtensions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenterXCUITestExtensions.framework; sourceTree = "<group>"; };
+		4A5EF0121FD4F5B900EE8DB1 /* AppCenterXCUITestExtensions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenterXCUITestExtensions.framework; sourceTree = "<group>"; };
+		4A7147AA1F5CF5A400D80CC6 /* m2048UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = m2048UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A7147AC1F5CF5A400D80CC6 /* m2048UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = m2048UITests.m; sourceTree = "<group>"; };
+		4A7147AE1F5CF5A400D80CC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A7147B41F5CF6B500D80CC6 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		4A8AD89B1F4182B800CA82DE /* m2048.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = m2048.entitlements; sourceTree = "<group>"; };
+		64E0840FD03D1927009FDC1E /* Pods-m2048Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-m2048Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-m2048Tests/Pods-m2048Tests.release.xcconfig"; sourceTree = "<group>"; };
+		809E47C1C60B9F784F6BCEEF /* Pods-m2048.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-m2048.release.xcconfig"; path = "Pods/Target Support Files/Pods-m2048/Pods-m2048.release.xcconfig"; sourceTree = "<group>"; };
+		9D9BCE16014A1ED5C00F3E4E /* Pods-m2048UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-m2048UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-m2048UITests/Pods-m2048UITests.release.xcconfig"; sourceTree = "<group>"; };
+		BB4D89711BF76B3C7483A3F2 /* Pods_m2048Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_m2048Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA131825A21D7CF209B9E557 /* Pods_m2048UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_m2048UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E28FB111776772F4E21DA64B /* Pods-m2048Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-m2048Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-m2048Tests/Pods-m2048Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		E7CDE3E3E041F9A0869C36AF /* Pods-m2048.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-m2048.debug.xcconfig"; path = "Pods/Target Support Files/Pods-m2048/Pods-m2048.debug.xcconfig"; sourceTree = "<group>"; };
+		FFA2BE2D8D3E1DC36CCDAC5B /* Pods-m2048UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-m2048UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-m2048UITests/Pods-m2048UITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2443DC4F18D662CA00C920C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2443DC5818D662CA00C920C1 /* CoreGraphics.framework in Frameworks */,
+				2443DC5A18D662CA00C920C1 /* UIKit.framework in Frameworks */,
+				2443DC5C18D662CA00C920C1 /* SpriteKit.framework in Frameworks */,
+				2443DC5618D662CA00C920C1 /* Foundation.framework in Frameworks */,
+				EAEE6F88439B4FD932F58F0E /* Pods_m2048.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2443DC7718D662CA00C920C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2443DC7C18D662CA00C920C1 /* XCTest.framework in Frameworks */,
+				2443DC7E18D662CA00C920C1 /* UIKit.framework in Frameworks */,
+				2443DC7D18D662CA00C920C1 /* Foundation.framework in Frameworks */,
+				BFDE0CB5FC6605134C34496B /* Pods_m2048Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A7147A71F5CF5A400D80CC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00BAF1355B7CC18FB7F9F011 /* Pods_m2048UITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2443DC4918D662CA00C920C1 = {
+			isa = PBXGroup;
+			children = (
+				4A5EF0121FD4F5B900EE8DB1 /* AppCenterXCUITestExtensions.framework */,
+				4A7147B41F5CF6B500D80CC6 /* Cartfile */,
+				2443DC5D18D662CA00C920C1 /* m2048 */,
+				2443DC8118D662CA00C920C1 /* m2048Tests */,
+				4A7147AB1F5CF5A400D80CC6 /* m2048UITests */,
+				2443DC5418D662CA00C920C1 /* Frameworks */,
+				2443DC5318D662CA00C920C1 /* Products */,
+				48895A0033D20C9A87F3129E /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		2443DC5318D662CA00C920C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2443DC5218D662CA00C920C1 /* m2048.app */,
+				2443DC7A18D662CA00C920C1 /* m2048Tests.xctest */,
+				4A7147AA1F5CF5A400D80CC6 /* m2048UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2443DC5418D662CA00C920C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A5EF00F1FD4F59600EE8DB1 /* AppCenterXCUITestExtensions.framework */,
+				2443DC5518D662CA00C920C1 /* Foundation.framework */,
+				2443DC5718D662CA00C920C1 /* CoreGraphics.framework */,
+				2443DC5918D662CA00C920C1 /* UIKit.framework */,
+				2443DC5B18D662CA00C920C1 /* SpriteKit.framework */,
+				2443DC7B18D662CA00C920C1 /* XCTest.framework */,
+				2887B6BAE78AE68856BAF1DC /* Pods_m2048.framework */,
+				BB4D89711BF76B3C7483A3F2 /* Pods_m2048Tests.framework */,
+				DA131825A21D7CF209B9E557 /* Pods_m2048UITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2443DC5D18D662CA00C920C1 /* m2048 */ = {
+			isa = PBXGroup;
+			children = (
+				4A8AD89B1F4182B800CA82DE /* m2048.entitlements */,
+				2443DC6618D662CA00C920C1 /* M2AppDelegate.h */,
+				2443DC6718D662CA00C920C1 /* M2AppDelegate.m */,
+				2443DC6918D662CA00C920C1 /* Main.storyboard */,
+				2443DC9C18D6645800C920C1 /* Appearance */,
+				2443DC9D18D6645800C920C1 /* Controller */,
+				24C4516018DABABE0001FCFD /* Global */,
+				2443DC9418D663FC00C920C1 /* Sprite Kit */,
+				2443DC9718D663FC00C920C1 /* State */,
+				24C4516518DD64630001FCFD /* View */,
+				2443DC5E18D662CA00C920C1 /* Supporting Files */,
+				2443DC7418D662CA00C920C1 /* Images.xcassets */,
+			);
+			path = m2048;
+			sourceTree = "<group>";
+		};
+		2443DC5E18D662CA00C920C1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2443DC5F18D662CA00C920C1 /* m2048-Info.plist */,
+				2443DC6018D662CA00C920C1 /* InfoPlist.strings */,
+				2443DC6318D662CA00C920C1 /* main.m */,
+				2443DC6518D662CA00C920C1 /* m2048-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2443DC8118D662CA00C920C1 /* m2048Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2443DC8718D662CA00C920C1 /* m2048Tests.m */,
+				2443DC8218D662CA00C920C1 /* Supporting Files */,
+			);
+			path = m2048Tests;
+			sourceTree = "<group>";
+		};
+		2443DC8218D662CA00C920C1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2443DC8318D662CA00C920C1 /* m2048Tests-Info.plist */,
+				2443DC8418D662CA00C920C1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2443DC9418D663FC00C920C1 /* Sprite Kit */ = {
+			isa = PBXGroup;
+			children = (
+				24C4515918D6DC4A0001FCFD /* M2Cell.h */,
+				24C4515A18D6DC4A0001FCFD /* M2Cell.m */,
+				24C4515C18D6DC740001FCFD /* M2Grid.h */,
+				24C4515D18D6DC740001FCFD /* M2Grid.m */,
+				2443DC9518D663FC00C920C1 /* M2Scene.h */,
+				2443DC9618D663FC00C920C1 /* M2Scene.m */,
+				2443DCAD18D6C18400C920C1 /* M2Tile.h */,
+				2443DCAE18D6C18400C920C1 /* M2Tile.m */,
+			);
+			path = "Sprite Kit";
+			sourceTree = "<group>";
+		};
+		2443DC9718D663FC00C920C1 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				2443DC9818D663FC00C920C1 /* M2GameManager.h */,
+				2443DC9918D663FC00C920C1 /* M2GameManager.m */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		2443DC9C18D6645800C920C1 /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				2443DCA118D6649500C920C1 /* M2Theme.h */,
+				2443DCA218D6649500C920C1 /* M2Theme.m */,
+			);
+			path = Appearance;
+			sourceTree = "<group>";
+		};
+		2443DC9D18D6645800C920C1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2443DCA418D66CCC00C920C1 /* M2ViewController.h */,
+				2443DCA518D66CCC00C920C1 /* M2ViewController.m */,
+				2443DC9E18D6647000C920C1 /* M2SettingsViewController.h */,
+				2443DC9F18D6647000C920C1 /* M2SettingsViewController.m */,
+				24C4517118E140AE0001FCFD /* M2SettingsDetailViewController.h */,
+				24C4517218E140AE0001FCFD /* M2SettingsDetailViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		24C4516018DABABE0001FCFD /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				24C4516118DABABE0001FCFD /* M2GlobalState.h */,
+				24C4516218DABABE0001FCFD /* M2GlobalState.m */,
+				24C4516318DABABE0001FCFD /* M2Position.h */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		24C4516518DD64630001FCFD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				24C4516618DD64A90001FCFD /* M2GridView.h */,
+				24C4516718DD64A90001FCFD /* M2GridView.m */,
+				24C4516E18DFF10B0001FCFD /* M2ScoreView.h */,
+				24C4516F18DFF10B0001FCFD /* M2ScoreView.m */,
+				24C4517F18E265390001FCFD /* M2Overlay.h */,
+				24C4518018E265390001FCFD /* M2Overlay.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		48895A0033D20C9A87F3129E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7CDE3E3E041F9A0869C36AF /* Pods-m2048.debug.xcconfig */,
+				809E47C1C60B9F784F6BCEEF /* Pods-m2048.release.xcconfig */,
+				E28FB111776772F4E21DA64B /* Pods-m2048Tests.debug.xcconfig */,
+				64E0840FD03D1927009FDC1E /* Pods-m2048Tests.release.xcconfig */,
+				FFA2BE2D8D3E1DC36CCDAC5B /* Pods-m2048UITests.debug.xcconfig */,
+				9D9BCE16014A1ED5C00F3E4E /* Pods-m2048UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4A7147AB1F5CF5A400D80CC6 /* m2048UITests */ = {
+			isa = PBXGroup;
+			children = (
+				4A7147AC1F5CF5A400D80CC6 /* m2048UITests.m */,
+				4A7147AE1F5CF5A400D80CC6 /* Info.plist */,
+			);
+			path = m2048UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2443DC5118D662CA00C920C1 /* m2048 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2443DC8B18D662CA00C920C1 /* Build configuration list for PBXNativeTarget "m2048" */;
+			buildPhases = (
+				FD4F5C7F9B04D1ECDDB9AA4D /* [CP] Check Pods Manifest.lock */,
+				2443DC4E18D662CA00C920C1 /* Sources */,
+				2443DC4F18D662CA00C920C1 /* Frameworks */,
+				2443DC5018D662CA00C920C1 /* Resources */,
+				854EE088F2BA20063DA298E6 /* [CP] Embed Pods Frameworks */,
+				4998A4402A30D152172334FC /* [CP] Copy Pods Resources */,
+				4A02D0221FD5238E003876C9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = m2048;
+			productName = m2048;
+			productReference = 2443DC5218D662CA00C920C1 /* m2048.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2443DC7918D662CA00C920C1 /* m2048Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2443DC8E18D662CA00C920C1 /* Build configuration list for PBXNativeTarget "m2048Tests" */;
+			buildPhases = (
+				0C50CBA6B4DCFECD82A2206D /* [CP] Check Pods Manifest.lock */,
+				2443DC7618D662CA00C920C1 /* Sources */,
+				2443DC7718D662CA00C920C1 /* Frameworks */,
+				2443DC7818D662CA00C920C1 /* Resources */,
+				28BB0FC70AB6CC511257D6F9 /* [CP] Embed Pods Frameworks */,
+				383C6A4373DA6B98EE2CC145 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2443DC8018D662CA00C920C1 /* PBXTargetDependency */,
+			);
+			name = m2048Tests;
+			productName = m2048Tests;
+			productReference = 2443DC7A18D662CA00C920C1 /* m2048Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4A7147A91F5CF5A400D80CC6 /* m2048UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A7147B31F5CF5A400D80CC6 /* Build configuration list for PBXNativeTarget "m2048UITests" */;
+			buildPhases = (
+				E15E5AA30124A114B0A9A6FE /* [CP] Check Pods Manifest.lock */,
+				4A7147A61F5CF5A400D80CC6 /* Sources */,
+				4A7147A71F5CF5A400D80CC6 /* Frameworks */,
+				4A7147A81F5CF5A400D80CC6 /* Resources */,
+				B3041B71E340A2BF578C532F /* [CP] Embed Pods Frameworks */,
+				A8A2D9F209288FE6BA572684 /* [CP] Copy Pods Resources */,
+				4A7147B81F5CF79800D80CC6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A7147B01F5CF5A400D80CC6 /* PBXTargetDependency */,
+			);
+			name = m2048UITests;
+			productName = m2048UITests;
+			productReference = 4A7147AA1F5CF5A400D80CC6 /* m2048UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2443DC4A18D662CA00C920C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = M2;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Danqing;
+				TargetAttributes = {
+					2443DC5118D662CA00C920C1 = {
+						DevelopmentTeam = 3D27XEAVGH;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					2443DC7918D662CA00C920C1 = {
+						TestTargetID = 2443DC5118D662CA00C920C1;
+					};
+					4A7147A91F5CF5A400D80CC6 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 3D27XEAVGH;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2443DC5118D662CA00C920C1;
+					};
+				};
+			};
+			buildConfigurationList = 2443DC4D18D662CA00C920C1 /* Build configuration list for PBXProject "m2048" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2443DC4918D662CA00C920C1;
+			productRefGroup = 2443DC5318D662CA00C920C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2443DC5118D662CA00C920C1 /* m2048 */,
+				2443DC7918D662CA00C920C1 /* m2048Tests */,
+				4A7147A91F5CF5A400D80CC6 /* m2048UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2443DC5018D662CA00C920C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2443DC6218D662CA00C920C1 /* InfoPlist.strings in Resources */,
+				2443DC7518D662CA00C920C1 /* Images.xcassets in Resources */,
+				4A7147B51F5CF6B500D80CC6 /* Cartfile in Resources */,
+				2443DC6B18D662CA00C920C1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2443DC7818D662CA00C920C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2443DC8618D662CA00C920C1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A7147A81F5CF5A400D80CC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C50CBA6B4DCFECD82A2206D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-m2048Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28BB0FC70AB6CC511257D6F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-m2048Tests/Pods-m2048Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		383C6A4373DA6B98EE2CC145 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-m2048Tests/Pods-m2048Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4998A4402A30D152172334FC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-m2048/Pods-m2048-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		854EE088F2BA20063DA298E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-m2048/Pods-m2048-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8A2D9F209288FE6BA572684 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-m2048UITests/Pods-m2048UITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3041B71E340A2BF578C532F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-m2048UITests/Pods-m2048UITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AppCenterXCUITestExtensions/AppCenterXCUITestExtensions.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppCenterXCUITestExtensions.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-m2048UITests/Pods-m2048UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E15E5AA30124A114B0A9A6FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-m2048UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD4F5C7F9B04D1ECDDB9AA4D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-m2048-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2443DC4E18D662CA00C920C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2443DCA618D66CCC00C920C1 /* M2ViewController.m in Sources */,
+				2443DC6418D662CA00C920C1 /* main.m in Sources */,
+				24C4515B18D6DC4A0001FCFD /* M2Cell.m in Sources */,
+				24C4516818DD64A90001FCFD /* M2GridView.m in Sources */,
+				2443DC9A18D663FC00C920C1 /* M2Scene.m in Sources */,
+				24C4515E18D6DC740001FCFD /* M2Grid.m in Sources */,
+				24C4518118E265390001FCFD /* M2Overlay.m in Sources */,
+				2443DCAF18D6C18400C920C1 /* M2Tile.m in Sources */,
+				2443DCA018D6647000C920C1 /* M2SettingsViewController.m in Sources */,
+				24C4517018DFF10B0001FCFD /* M2ScoreView.m in Sources */,
+				2443DCA318D6649500C920C1 /* M2Theme.m in Sources */,
+				24C4517318E140AE0001FCFD /* M2SettingsDetailViewController.m in Sources */,
+				24C4516418DABABE0001FCFD /* M2GlobalState.m in Sources */,
+				2443DC6818D662CA00C920C1 /* M2AppDelegate.m in Sources */,
+				2443DC9B18D663FC00C920C1 /* M2GameManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2443DC7618D662CA00C920C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2443DC8818D662CA00C920C1 /* m2048Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A7147A61F5CF5A400D80CC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A7147AD1F5CF5A400D80CC6 /* m2048UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2443DC8018D662CA00C920C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2443DC5118D662CA00C920C1 /* m2048 */;
+			targetProxy = 2443DC7F18D662CA00C920C1 /* PBXContainerItemProxy */;
+		};
+		4A7147B01F5CF5A400D80CC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2443DC5118D662CA00C920C1 /* m2048 */;
+			targetProxy = 4A7147AF1F5CF5A400D80CC6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2443DC6018D662CA00C920C1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2443DC6118D662CA00C920C1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2443DC6918D662CA00C920C1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2443DC6A18D662CA00C920C1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2443DC8418D662CA00C920C1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2443DC8518D662CA00C920C1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2443DC8918D662CA00C920C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2443DC8A18D662CA00C920C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2443DC8C18D662CA00C920C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7CDE3E3E041F9A0869C36AF /* Pods-m2048.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = m2048/m2048.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3D27XEAVGH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "m2048/m2048-Prefix.pch";
+				INFOPLIST_FILE = "m2048/m2048-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PRODUCT_BUNDLE_IDENTIFIER = qw.danqing.m2048;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2443DC8D18D662CA00C920C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 809E47C1C60B9F784F6BCEEF /* Pods-m2048.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = m2048/m2048.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3D27XEAVGH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "m2048/m2048-Prefix.pch";
+				INFOPLIST_FILE = "m2048/m2048-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PRODUCT_BUNDLE_IDENTIFIER = qw.danqing.m2048;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2443DC8F18D662CA00C920C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E28FB111776772F4E21DA64B /* Pods-m2048Tests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/m2048.app/m2048";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "m2048/m2048-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "m2048Tests/m2048Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.danqing.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		2443DC9018D662CA00C920C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64E0840FD03D1927009FDC1E /* Pods-m2048Tests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/m2048.app/m2048";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "m2048/m2048-Prefix.pch";
+				INFOPLIST_FILE = "m2048Tests/m2048Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.danqing.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		4A7147B11F5CF5A400D80CC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFA2BE2D8D3E1DC36CCDAC5B /* Pods-m2048UITests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 3D27XEAVGH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = m2048UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.m2048UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = m2048;
+			};
+			name = Debug;
+		};
+		4A7147B21F5CF5A400D80CC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D9BCE16014A1ED5C00F3E4E /* Pods-m2048UITests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 3D27XEAVGH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = m2048UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.m2048UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = m2048;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2443DC4D18D662CA00C920C1 /* Build configuration list for PBXProject "m2048" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2443DC8918D662CA00C920C1 /* Debug */,
+				2443DC8A18D662CA00C920C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2443DC8B18D662CA00C920C1 /* Build configuration list for PBXNativeTarget "m2048" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2443DC8C18D662CA00C920C1 /* Debug */,
+				2443DC8D18D662CA00C920C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2443DC8E18D662CA00C920C1 /* Build configuration list for PBXNativeTarget "m2048Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2443DC8F18D662CA00C920C1 /* Debug */,
+				2443DC9018D662CA00C920C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A7147B31F5CF5A400D80CC6 /* Build configuration list for PBXNativeTarget "m2048UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A7147B11F5CF5A400D80CC6 /* Debug */,
+				4A7147B21F5CF5A400D80CC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2443DC4A18D662CA00C920C1 /* Project object */;
+}
