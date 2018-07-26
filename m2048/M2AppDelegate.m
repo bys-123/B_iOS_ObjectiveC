@@ -19,7 +19,7 @@
     //[MSAppCenter setLogUrl:@"https://in-staging-south-centralus.staging.avalanch.es"];
     [MSPush setDelegate:self];
     [MSCrashes setDelegate:self];
-    [MSAppCenter start:@"c55344fd-a53d-45d6-96a6-6167c83757f2" withServices:@[
+    [MSAppCenter start:@"24137b35-3bdb-498d-bbff-d3f9443c3055" withServices:@[
                                                                                  [MSAnalytics class],
                                                                                  [MSCrashes class],
                                                                                  [MSPush class]                                                                                 ]];
