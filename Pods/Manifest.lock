@@ -1,13 +1,13 @@
 PODS:
-  - AppCenter (1.6.1):
-    - AppCenter/Analytics (= 1.6.1)
-    - AppCenter/Crashes (= 1.6.1)
-  - AppCenter/Analytics (1.6.1):
+  - AppCenter (1.8.0):
+    - AppCenter/Analytics (= 1.8.0)
+    - AppCenter/Crashes (= 1.8.0)
+  - AppCenter/Analytics (1.8.0):
     - AppCenter/Core
-  - AppCenter/Core (1.6.1)
-  - AppCenter/Crashes (1.6.1):
+  - AppCenter/Core (1.8.0)
+  - AppCenter/Crashes (1.8.0):
     - AppCenter/Core
-  - AppCenter/Push (1.6.1):
+  - AppCenter/Push (1.8.0):
     - AppCenter/Core
   - AppCenterXCUITestExtensions (1.0.0)
 
@@ -17,7 +17,7 @@ DEPENDENCIES:
   - AppCenterXCUITestExtensions
 
 SPEC CHECKSUMS:
-  AppCenter: f9eb653a45cece34549232f295aec05260dfc24f
+  AppCenter: 7e7b42e94b70294d1de3d747f164f0c1668a28e1
   AppCenterXCUITestExtensions: 8825ed941664fa21d6740a5ed6928a84c06623ac
 
 PODFILE CHECKSUM: e468a9cdbeb1734486ea8a8f2a34e1bbf7894656
